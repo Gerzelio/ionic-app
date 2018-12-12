@@ -1,8 +1,8 @@
 {
   "name": "jpromismobile",
-  "app_id": "a845c24c",
-  "type": "ionic-angular",
   "integrations": {
     "cordova": {}
-  }
+  },
+  "type": "ionic-angular",
+  "id": "a845c24c"
 }
