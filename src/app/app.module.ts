@@ -5,26 +5,33 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
+import { HttpModule } from '@angular/http';
 import { HomePage } from '../pages/home/home';
+import { MenuPage } from '../pages/menu/menu';
+import { JpromisApiProvider } from '../providers/jpromis-api/jpromis-api';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    MenuPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    HttpModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    MenuPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    JpromisApiProvider
   ]
 })
 export class AppModule {}

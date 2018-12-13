@@ -1,14 +1,20 @@
 <ion-content padding>
+  <div class="imagem">
+    <img src="../../assets/imagens/jhpiego-logo.png" alt="Jhpiego Logo">
+  </div>
   <ion-list>
     <ion-item>
       <ion-label floating>Username</ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-input type="text" value="{{ dados.user }}"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label floating>passord</ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-label floating>Password</ion-label>
+      <ion-input type="Password" value="{{ dados.pass }}" aria-required="true"></ion-input>
     </ion-item>
-
-    <button ion-button full round>Full Button</button>
+    <div class="format">
+      <a (click)="presentLoading()" class="botao" ion-button full round >
+        Login
+      </a>
+    </div>
   </ion-list>
 </ion-content>
