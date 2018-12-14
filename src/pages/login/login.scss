@@ -8,6 +8,39 @@ page-login {
   button.botao{
     background-color:#116F88;
     padding:8%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  ion-content.login-conteudo{
+    margin-top: 25%;
   }
  
+  img.centralizar{
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    padding-bottom: 8%;
+  }
+
+  ion-item.esquerdo{
+    padding-right: 10%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .onda1{
+    background-color:#116F88;
+    background-image: url("../../assets/imagens/ondas.png");
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .onda2{
+    background-color:#116F88;
+    background-image: url("../../assets/imagens/ondas.png");
+    height: 100%;
+    width: 100%;
+  }
 }

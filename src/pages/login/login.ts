@@ -29,7 +29,7 @@ export class LoginPage {
   presentLoading() {
     const loader = this.loadingCtrl.create({
       content: "Please wait...",
-      duration: 1500
+      duration: 500
     });
     loader.present();
     this.goToPageMenu();
